@@ -1,9 +1,6 @@
 /*Styled Imports*/
 import '../globals.css';
 import { Raleway, Merriweather } from 'next/font/google';
-const raleway = Raleway({
-subsets: ["latin"], weight: "600"
-})
 const ralewayBold = Raleway({
     subsets: ["latin"], weight: "800"
 })
@@ -25,7 +22,7 @@ export default function Hero(){
                         src = {heroImage}
                         width={1000}
                         height={100}
-                        alt = 'Headshot of Serenity'
+                        alt = 'Stock Photo of Team'
                         className='heroImage'>
                     </Image>
                 </div>

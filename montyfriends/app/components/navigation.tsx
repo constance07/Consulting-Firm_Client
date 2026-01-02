@@ -47,13 +47,15 @@ export default function Navigation(){
             <nav id = "navOpen" className="hamburgerContainer" >
             <div></div>
             <div className='fixedNavigation'>
+                
                 <Image
                     src = {logo}
-                    width={100}
-                    height={50}
+                    width={2000}
+                    height={500}
                     alt = 'Logo of Monty & Friends'
                     id = "logoMobile"
                 />
+                
                     {/*Collapsed*/}
                     <div className='hamburgerIconBackground'>
                         <div className = "hamburgerIcon" onClick={() => {
@@ -84,22 +86,22 @@ export default function Navigation(){
                         </div>
                     {/*Pages*/}
                         <a className = 'activeMobile' href ='/'><li>Home</li></a>
-                        <a href ='#aboutSection'><li>About</li></a>
-                        <a href ='#workSection'><li>Work</li></a>
-                        <a href ="#blogSection"><li>Blog</li></a>
-                        <a href ="#contactSection"><li>Contact</li></a>
+                        <a href ='/(1)services'><li>Services</li></a>
+                        <a href ='/(2)founder'><li>Founder</li></a>
+                        <a href ="/(3)blog"><li>Blog</li></a>
+                        <a href ="/(4)contact"><li>Contact</li></a>
                     </ul>    
             </nav>
 
 
     {/*ON DESKTOP*/}   
         {/*Navigation Bar*/} 
-        <div className='placeHolderNav'>
+        {/* <div className='placeHolderNav'>
         <nav className ='navContainer'>
      
             <ul className='navList'>
                 {/*Pages*/}
-                        <a className='active' href ='/'><li>01. Home</li></a>
+                        {/* <a className='active' href ='/'><li>01. Home</li></a>
                         <a  href ='#aboutSection'><li>02. About</li></a>
                         <a  href ='#workSection'><li>03. Work</li></a>
                         <a  href ="#blogSection"><li>04. Blog</li></a>
@@ -108,7 +110,8 @@ export default function Navigation(){
         </nav>  
         <div className='navBackgroundContainer'>
         <div className='navBackground'></div></div>
-        </div>
+        </div> */}
+        
         </div>
         </>
     )

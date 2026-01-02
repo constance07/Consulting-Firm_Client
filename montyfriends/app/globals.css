@@ -2,6 +2,7 @@ body{
   /*Overlay*/
   margin: 0;
   background-color: #F8F8F8;
+
 }
 /*Scroll-Bar*/
       /*Disables*/
@@ -18,11 +19,10 @@ body{
 /*Media Queries* --> Iphone and Tablets*/
 /*xs*/
 @media (min-width: 0px){
-    /*HAMBURGER NAVIGATION BAR*/
+  /*HAMBURGER NAVIGATION BAR*/
       .hamburgerContainer{
         width:100%;
-        background-color: #01645B;
-        height: 120px;
+        height: 100px;
         padding-top: 0;
         margin-bottom: 0vh;
         display: flex;
@@ -124,17 +124,17 @@ body{
           z-index: 5;
           transition: 0.5s ease-out;
      }.hamburgerIcon span{
-          height: 2.5px;
+          height: 2px;
           width: 30px;
-          border-radius: 5px;
+          border-radius: 25px;
           background-color: #F8F8F8;
       }.hamburgerIcon:hover{
           cursor: pointer; 
       }#logoMobile{
         left: 0;
         justify-content: flex-start;
-        width: 80px;
-        height: 75px;
+        width: 85px;
+        height: 80px;
         position: absolute;
         top: 12.5px;
         padding-left: 0px;
@@ -145,7 +145,9 @@ body{
       background-color: #01645B;
       width: 100%;
       height: 100px;
-    }/* HERO SECTION */
+      z-index: 2;
+    }
+  /* HERO SECTION */
     .heroContainer{
       padding-bottom: 100px;
       display: flex;
@@ -211,7 +213,7 @@ body{
       position: absolute;
       background-color: #e989c3;
       transition: width 0.25s ease-out;
-    }#helpButton:hover > span#helpContent::before{
+    }#helpButton:hover > span#helpContent:before{
       width: 100%;
     }#helpButton:hover{
       cursor: pointer;
@@ -285,8 +287,8 @@ body{
     align-items: center;
     justify-content: center;
   }.compAbtImg{
-    width: 250px;
-    height: 375px;
+    width: 275px;
+    height: 400px;
     border-color: #01645B;
     border-width: 2px;
     border-style: solid;
@@ -298,99 +300,249 @@ body{
     height: 650px;
     margin-right: 75px;
     margin-left: 75px;
-
+  }
+  /* FOOTER SECTION */
+  .footerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+    height: 130px;
+    background-color: #E6E6E6;
+  }#ownershipMotto{
+    margin-top: 0px;
+    font-size: 0.65em;
+  }#ownershipTag{
+    margin-bottom: 0px;
+    font-size: 0.65em;
+    margin: 0;
+  }#secondaryLogo{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+  }
+  /*SERVICE SECTION*/
+  .serviceContainer{
+    display: flex;
+    background-color: #F8F8F8;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }.serviceTitleContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+  }#firstPartTitleB{
+     font-size: 1.1em;
+      color: #e989c3;
+      margin-bottom: 0px;
+      margin-top: 40px;
+  }#secondPartTitleB{
+      font-size: 2.2em;
+      margin-top: 5px;
+      margin-bottom: 0px;  
+      color: #2D2D30;
+  }#serviceDisc{
+      color: #F8F8F8;
+      margin-top: 15px;
+      font-size: 0.9em;
+      color:#2D2D30;
+  }#serviceImage{
+    height: 400px;
+    margin-top: 25px;
+    width: 350px;
+    height: 200px;
+    border-color: #01645B;
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+  }.cardServiceSet{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 75px;
+    justify-content: center;
+    margin-bottom: 125px;
+  }.cardServices{
+    background-color:#FFEDA8;
+    border-radius: 25px;
+    width: 175px;
+    margin: 5;
+    padding: 15px;
+    box-shadow: 0px 2px 3px #2d2d304d;
+  }#serviceCardTitle{
+    font-size: 0.8em;
+    margin-bottom: 0px;
+  }#serviceCardDisc{
+    font-size: 0.7em;
+  }#projectLink{
+    font-size: 0.75em;
+  }#projectLink:hover{
+    color: #2d2d3088;
+    cursor: pointer;
+  }.founderImageContainer{
+    background-color: #FFEDA8;
+    display: flex;
+    flex-direction: column;
+    height: 625px;
+    padding-top: 25px;
+    align-items: center;
+    justify-content: center;
+  }.sumiHeadshot{
+    width: 300px;
+    height: 400px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #01645B;
+    border-radius: 25px;
+  }.founderAboutDisc{
+    text-align: center;
+    margin-right: 75px;
+    margin-left: 75px;
+    padding-top: 100px;
+    height: 600px;
+  }.founderAboutContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  /*BLOG SECTION*/
+  .blogContainer{
+    margin-top: 0px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+  }.blogTitle{
+    display: flex;
+    margin-top: 75px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
+    margin-right: 75px;
+    text-align: center;
+  }.blogPostContainer{
+    height: 400px;
+    display: flex;
+    align-items: center;
+  }#downloadResume{
+    background-color: #01645B;
+    height: 50px;
+    width: 120px;
+    font-size: 0.9em;
+    margin-top: 25px;
+    border-radius: 25px;
+    border-width: 0px;
+    }span#downloadContent{
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      color: #F8F8F8;
+    }span#downloadContent::before{
+      content: "";
+      height: 2px;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      text-decoration: none;
+      position: absolute;
+      background-color: #e989c3;
+      transition: width 0.25s ease-out;
+    }#downloadResume:hover > span#downloadContent:before{
+      width: 100%;
+    }#downloadResume:hover{
+      cursor: pointer;
+    }#downloadLink { 
+      text-decoration: none;
+      color: #F8F8F8;
+    }#blogComingSoon{
+    font-size: 1.5emem;
+    margin-right: 125px;
+    margin-left: 125px;
+    text-align: center;
+    color: #6e2a89d2;
+  }
+  /*CONTACT SECTION */
+.contactContainer{
+      padding-bottom: 150px;
+      background-color: #01645B;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }#contactTitle{
+      margin-top: 75px;
+      width: 300px;
+      margin-right: 75px;
+      margin-left: 75px;
+      font-size: 1.8em;
+    }#contactTextA1, #contactTextA2{
+      color: #093D39;
+    }#contactTextB1, #contactTextB2{
+      color: #F8F8F8;
+    }.formField{
+      display: flex;
+      flex-direction: column;
+      border-width: 0px;
+      margin-top: 75px;   
+      border-radius: 25px; 
+      padding: 25px;
+      background-color: #f8f8f836;  
+    }#formSubTitles{
+      color: #F8F8F8;
+      text-align: ce;
+      font-size: 1.1em;
+      margin-bottom: 0px;
+    }.formField{
+      text-align: start;
+    }#inputA,#inputB, #inputC,#textArea{
+      width: 60vw;
+      height: 12.5px;
+      font-size: 0.9em;
+      border-radius: 20px;
+      padding: 12px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border-width: 0px;
+      background-color: #F8F8F8;
+      outline: none;
+    }#textArea{      
+      height: 100px;
+      resize: none;
+    }#submit{
+      margin-top: 20px;
+      border: 20px;
+      width: 70vw;
+      height: 35px;
+      border-radius: 10px;
+      font-size: 15px;
+      color: #2D2D30;
+      background-color: #FFEDA8;
+      transition: 0.25s ease-out;
+    }#submit:hover{
+      color: #2d2d3088;
+      background-color: #ffeea8;
+      transition: 0.25s ease-in;
+      cursor: pointer;
+    }#nameError, #emailError, #subjectError, #messageError{
+      text-align: start;
+      font-size: 0.75em;
+      color: rgb(255, 24, 24);
+    }
   }
 
-@media(min-width: 1024px){
-/*NAVIGATION BAR*/
-    .hamburgerContainer{
-      display: none;
-    }
-    #logoMobile{display: none}
-    #devLogo{
-        display: inline-block;
-        left: 0;
-        justify-content: flex-start;
-        width: 50px;
-        height: 10px;
-        z-index: 5;
-        display: none;
-        font-size: 35px;
-        align-items: center;
-        transition: 0.5s ease-out;
-    }.placeHolderNav{
-      width: 200px;
-      height: 250px;
-    }.navContainer{
-        display: flex;
-        top: 52px;
-        width: 100%;
-        justify-content: center;
-        position: fixed;
-        z-index: 300;
-        flex-direction: row;
-        margin: auto;
-        align-items: center;
-    }.navContainer ul{
-        color: #FBEED7;
-        display: flex;
-        padding: 10px;
-        padding-left: 0px;
-        padding-right: 0px;
-        background-color: #3f3f3f;
-        height: 25px;
-        border-width: 1px;
-        border-style:solid;
-        border-color: #ffffff21;
-        border-radius: 25px;
-        padding-left: 5px;
-        padding-right: 5px;
-        align-items: center;
-    }.navContainer li{      
-        list-style: none;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        color: #FFFFFF;
-        padding-top: 13px;
-        padding-bottom: 15px;
-        font-size: 0.65em;
-        text-decoration: none;
-        transition: all .25s ease-out;
-        width: 100px;
-        height: 10px;
-        text-align: center;
-        border-radius: 25px;
-        cursor: pointer;
-
-     }.navContainer a{
-        text-decoration: none;
-        display: flex;
-        font-size: 1.5em;
-        cursor: default;
-        flex-direction: row;
-        border-radius: 25px;
-        transition: all .25s ease-out;
-      }.navContainer li:hover{
-        color: #E6E6E6;
-    }.hamburgerIcon{
-        display: none;
-    }.active{
-      transition: all .25s ease-in-out;
-    }.navList a:first-child{
-      margin-right: 10px;
-      margin-left: 0px;
-    }.navList a{
-      margin-left: 5px;
-      margin-right: 5px;
-    }.navList a:last-child{
-      margin-right:0px;
-      
-    }
-}
-
-
 /*Animations */
+
 @keyframes fade-out{
   from{
     opacity: 100%;
@@ -409,4 +561,16 @@ body{
        transition: 5.5 ease-in;
     }
 }
+@keyframes animeGradientIn{
+  from{
+      background: linear-gradient(180deg
+      ,rgba(16, 40, 91, 1) 0%,
+      rgba(41, 92, 200, 1) 55%,
+      rgba(54, 118, 255, 1) 90%);
+  }
 }
+
+
+
+
+
