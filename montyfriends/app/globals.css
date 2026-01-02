@@ -1,0 +1,412 @@
+body{
+  /*Overlay*/
+  margin: 0;
+  background-color: #F8F8F8;
+}
+/*Scroll-Bar*/
+      /*Disables*/
+      .overflowHidden{
+          height: 100vh;
+          overflow-y: hidden;
+      }
+      /*Enables*/
+      .overflowShow{
+          overflow: auto;
+          height: 100vh;
+          overflow-x: hidden;
+    }
+/*Media Queries* --> Iphone and Tablets*/
+/*xs*/
+@media (min-width: 0px){
+    /*HAMBURGER NAVIGATION BAR*/
+      .hamburgerContainer{
+        width:100%;
+        background-color: #01645B;
+        height: 120px;
+        padding-top: 0;
+        margin-bottom: 0vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: flex-end;
+      }.hamburgerContainer ul{
+          flex-direction: column;
+          list-style: none;
+          width: 60%;
+          padding: 0px;
+          height: 100%;
+          margin-top: 0px;
+          position: fixed;
+          background-color: #F8F8F8;
+          z-index: 90;
+          transition: all .55s ease-in-out;
+          transform: translateX(200vw);
+          overflow: hidden;
+          visibility: hidden;
+      }.hamburgerContainer li{
+          display: flex;
+          font-size: 1.3em;    
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          color: #2D2D30;
+          transition: 0.5s;
+          justify-content: start;
+          padding-left: 50px;
+      }.hamburgerContainer li:hover{
+        color: #3f3f3f9f;
+        transition: 0.15s;
+        cursor: pointer;
+      }.hamburgerContainer a{
+          background-color: #F8F8F8;
+          text-decoration: none;
+          height: 90px;
+          cursor: default;
+          display: flex;
+      } ul.open{
+        visibility:visible;
+        position: fixed;
+        transform: translateX(0vw);
+      }.overlayFadeIn{
+        width: 100%;
+        height: 1000vh;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.281);
+        z-index: 6;
+        animation: fade-in 0.25s;
+      }.overlayFadeOut{
+        z-index: 6;
+        animation: fade-out 0.25s;
+      }/*Close Navigation Menu*/
+      #close-Button{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 12%;
+        margin-bottom: 50px;
+      }#close-Button span:nth-child(1){
+        width: 20px;
+        height: 20px;
+      }#close-Button span:nth-child(1){
+          margin-top: 88px;
+          height: 3px;
+          width: 28px;
+          border-radius: 5px;
+          z-index: 5;
+          background-color: #2D2D30;
+          transform: translateY(-13px) rotate(45deg);
+          cursor: pointer;
+          transition: 0.5s ease-out;
+      } #close-Button span:nth-child(2){
+          height: 3px;
+          width: 28px;
+          border-radius: 5px;
+          z-index: 5;
+          background-color: #2D2D30;
+          transform: translateY(-17px) rotate(-45deg);
+           transition: 0.5s ease-out;
+          cursor: pointer;
+      }.hamburgerIconBackground{
+          height: 75px;
+          display: flex;
+          margin:0;
+          justify-content: end;
+          padding-bottom: 10%;
+      }.hamburgerIcon{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: absolute;
+          width: 35px;
+          height: 20px;
+          margin-right: 55px;
+          top: 40px;
+          z-index: 5;
+          transition: 0.5s ease-out;
+     }.hamburgerIcon span{
+          height: 2.5px;
+          width: 30px;
+          border-radius: 5px;
+          background-color: #F8F8F8;
+      }.hamburgerIcon:hover{
+          cursor: pointer; 
+      }#logoMobile{
+        left: 0;
+        justify-content: flex-start;
+        width: 80px;
+        height: 75px;
+        position: absolute;
+        top: 12.5px;
+        padding-left: 0px;
+        margin-left: 50px;
+        transition: 0.5s ease-out;
+    }.fixedNavigation{
+      position: fixed;
+      background-color: #01645B;
+      width: 100%;
+      height: 100px;
+    }/* HERO SECTION */
+    .heroContainer{
+      padding-bottom: 100px;
+      display: flex;
+      background-color: #01645B;
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin-bottom: 50px;
+    }.title{
+      color: #F8F8F8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 10px;
+      transition: 0.5s ease-out;
+    }#firstPartTitle{
+      font-size: 1.1em;
+      color: #e989c3;
+      margin-bottom: 0px;
+      margin-top: 40px;
+    }#secondPartTitle{
+      font-size: 2.2em;
+      width: 350px;
+      margin-top: 5px;
+      margin-bottom: 0px;
+    }#heroDisc{
+      color: #F8F8F8;
+      text-align: center;
+      width: 350px;
+      margin-top: 15px;
+      font-size: 0.9em;
+    }.heroImageContainer{
+      display: flex;
+      justify-content: center;
+    }.heroImage{
+      margin-top: 50px;
+      width: 350px;
+      height: 200px;
+      border-radius: 25px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #F8F8F8;
+    }#helpButton{
+      background-color: #F8F8F8;
+      height: 50px;
+      width: 150px;
+      font-size: 0.9em;
+      margin-top: 15px;
+      border-radius: 25px;
+      border-width: 0px;
+    }span#helpContent{
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      color: #01645B;
+    }span#helpContent::before{
+      content: "";
+      height: 2px;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      text-decoration: none;
+      position: absolute;
+      background-color: #e989c3;
+      transition: width 0.25s ease-out;
+    }#helpButton:hover > span#helpContent::before{
+      width: 100%;
+    }#helpButton:hover{
+      cursor: pointer;
+    }
+  /*ABOUT - COMPANY*/
+  #companyAboutSection{
+    padding-top: 25px;
+  }.companyAboutTitle{
+    color: #2D2D30;
+     margin-left: 75px;
+    margin-right: 75px;
+  }#secondHeader{
+    color: #e989c3;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }#firstHeader{
+    margin-top: 0px;
+    font-size: 2.0em;
+    margin-bottom: 15px;
+  }#paragraphText{
+    margin-top: 0px;
+    font-size: 0.9em;
+  }.companyAbtStats{
+    color: #2D2D30;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    margin-left: 75px;
+    margin-right: 75px;
+  }#stat1 span, #stat2 span, #stat3 span{
+    color: #6e2a89d2;
+  }#stat1,#stat2,#stat3{
+    width: 275px;
+    margin-top: 25px;
+  }.statPercent{
+    font-size: 1.0em;
+    display: inline;
+    margin-bottom: 0px;
+  }.statMoney{
+    display: inline;
+    font-size: 1.3em;
+    margin-bottom: 0px;
+  }.statNumbers{
+    display: inline;
+    font-size: 2.0em;
+  }.companyAbtQoute{
+    background-color: #01645B;
+    padding-top: 80px;
+    color: #E6E6E6;
+    display: flex;
+    flex-direction: column;
+  }#qoutations1,#qoutations2{
+    color: #e989c3;
+    font-size: 4.0em;
+  }#qouteContent{
+    display: inline-block;
+    margin-top: 0px;
+    padding-left: 75px;
+    text-align: center;
+    padding-right: 75px;
+  }#qoutations1{
+    margin-left: 50px;
+  }#qoutations2{
+    margin-right: 50px;
+    text-align: end;
+    padding-bottom: 50px;
+  }.compAbtImgContainer{
+    background-color: #FFEDA8;
+    display: flex;
+    height: 575px;
+    align-items: center;
+    justify-content: center;
+  }.compAbtImg{
+    width: 250px;
+    height: 375px;
+    border-color: #01645B;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 25px;
+  }.companyAboutDiscContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 650px;
+    margin-right: 75px;
+    margin-left: 75px;
+
+  }
+
+@media(min-width: 1024px){
+/*NAVIGATION BAR*/
+    .hamburgerContainer{
+      display: none;
+    }
+    #logoMobile{display: none}
+    #devLogo{
+        display: inline-block;
+        left: 0;
+        justify-content: flex-start;
+        width: 50px;
+        height: 10px;
+        z-index: 5;
+        display: none;
+        font-size: 35px;
+        align-items: center;
+        transition: 0.5s ease-out;
+    }.placeHolderNav{
+      width: 200px;
+      height: 250px;
+    }.navContainer{
+        display: flex;
+        top: 52px;
+        width: 100%;
+        justify-content: center;
+        position: fixed;
+        z-index: 300;
+        flex-direction: row;
+        margin: auto;
+        align-items: center;
+    }.navContainer ul{
+        color: #FBEED7;
+        display: flex;
+        padding: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        background-color: #3f3f3f;
+        height: 25px;
+        border-width: 1px;
+        border-style:solid;
+        border-color: #ffffff21;
+        border-radius: 25px;
+        padding-left: 5px;
+        padding-right: 5px;
+        align-items: center;
+    }.navContainer li{      
+        list-style: none;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        color: #FFFFFF;
+        padding-top: 13px;
+        padding-bottom: 15px;
+        font-size: 0.65em;
+        text-decoration: none;
+        transition: all .25s ease-out;
+        width: 100px;
+        height: 10px;
+        text-align: center;
+        border-radius: 25px;
+        cursor: pointer;
+
+     }.navContainer a{
+        text-decoration: none;
+        display: flex;
+        font-size: 1.5em;
+        cursor: default;
+        flex-direction: row;
+        border-radius: 25px;
+        transition: all .25s ease-out;
+      }.navContainer li:hover{
+        color: #E6E6E6;
+    }.hamburgerIcon{
+        display: none;
+    }.active{
+      transition: all .25s ease-in-out;
+    }.navList a:first-child{
+      margin-right: 10px;
+      margin-left: 0px;
+    }.navList a{
+      margin-left: 5px;
+      margin-right: 5px;
+    }.navList a:last-child{
+      margin-right:0px;
+      
+    }
+}
+
+
+/*Animations */
+@keyframes fade-out{
+  from{
+    opacity: 100%;
+  }
+    to{
+       opacity: 0%;
+        transition: 5.5 ease-in;
+    }
+  }
+@keyframes fade-in{
+    from{
+        opacity: 0%;
+    }
+    to{
+       opacity: 100%;
+       transition: 5.5 ease-in;
+    }
+}
+}
